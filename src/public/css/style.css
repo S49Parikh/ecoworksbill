@@ -1,0 +1,21 @@
+h3 {
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./Inter-Regular.ttf) format("woff2");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url(./Inter-Bold.ttf) format("woff2");
+  }
+
+  html {
+    font-family: Inter;
+    font-size: 16px;
+  }
