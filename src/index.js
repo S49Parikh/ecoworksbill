@@ -13,7 +13,7 @@ let items = [
       return item;
     });
     //const total = items.reduce((total, item) => total  item.price, 0).toFixed(2);
-    const total = "2163.98";
+    // const total = "2163.98";
     
     items = items.map((item) => {
       item.pricePerUnit = item.pricePerUnit.toFixed(2);
@@ -21,23 +21,25 @@ let items = [
       return item;
     });
 const data = {
-    invoiceNumber: "#12345",
-    companyDetails: ["Acme, Inc.", "3780  Woodlawn Drive", "53213 Milwaukee, WI"],
-    thanks:["Thanks & Regards","HR Benefits","New York Office"],
-    customerDetails: ["Big Co.", "1570  Coventry Court", "39531 Biloxi, MS"],
-    custname: "Mr Kapil",
-    items,
-    total
+    invoiceNumber: "Mr. Vinay Arora",
+    companyDetails: ["UNIVEST STOCK BROKING PRIVATE LIMITED"],
+    thanks:["Thank you for having business with us!"],
+    customerDetails: ["Invoice #: 188", "Date: 03.07.2024"],
+    ecoworksAdd: ["Ecoworks","Gandhinagar"],
+    custname: "Mr. Vinay Arora",
+    items
+    // total
    };
 const app = express()
 const port = 3000
 var name =  Date.now().toString();
+name = "Ecoworks_" + data.custname + "_03_July_24";
 
 //const html = fs.readFileSync(path.resolve(__dirname, "./template.html"), 'utf8')
 
-const html = fs.readFileSync(path.resolve(__dirname, "./template.html"), 'utf8')
+const html = fs.readFileSync(path.resolve(__dirname, "./EcoworksTemplate.html"), 'utf8')
 const template = Mustache.render(html, data);
-const content = ejs.render(template, { title: "Customer's Digital Copy" })
+const content = ejs.render(template, { title: "Payment Invoice", ecoworksAdd: "123, Sharan Business, Sector 26, Gandhinagar, Gujarat 382026" })
 fs.writeFile(path.resolve(__dirname, "./public/index.html"), content, () => {
     app.use(express.static('src/public'))
 
@@ -51,7 +53,8 @@ fs.writeFile(path.resolve(__dirname, "./public/index.html"), content, () => {
                   right: 20,
                   bottom: 20,
                 },
-            path: 'pdf_'+name+'.pdf' }
+            // path: 'pdf_'+name+'.pdf' }
+            path: name+'.pdf' }
         const file = { url }
         await html_to_pdf.generatePdf(file, options)
 
