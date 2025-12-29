@@ -21,19 +21,19 @@ let items = [
       return item;
     });
 const data = {
-    invoiceNumber: "Mr. Vinay Arora",
+    invoiceNumber: "Mr. Krunal Prajapati",
     companyDetails: ["UNIVEST STOCK BROKING PRIVATE LIMITED"],
     thanks:["Thank you for having business with us!"],
-    customerDetails: ["Invoice #: 188", "Date: 03.07.2024"],
+    customerDetails: ["Invoice #: 503", "Date: 24.12.2025"],
     ecoworksAdd: ["Ecoworks","Gandhinagar"],
-    custname: "Mr. Vinay Arora",
+    custname: "Mr. Krunal Prajapati",
     items
     // total
    };
 const app = express()
 const port = 3000
 var name =  Date.now().toString();
-name = "Ecoworks_" + data.custname + "_03_July_24";
+name = "Ecoworks_" + data.custname + "_24_Dec_25";
 
 //const html = fs.readFileSync(path.resolve(__dirname, "./template.html"), 'utf8')
 
