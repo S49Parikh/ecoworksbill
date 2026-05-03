@@ -21,12 +21,12 @@ let items = [
       return item;
     });
 const data = {
-    invoiceNumber: "RPTECH GLOBAL SERVICES LLP",
-    companyDetails: ["RPTECH GLOBAL SERVICES LLP"],
+    invoiceNumber: "Mr. Vinay Arora",
+    companyDetails: ["UNIVEST STOCK BROKING PRIVATE LIMITED"],
     thanks:["Thank you for having business with us!"],
-    customerDetails: ["Invoice #: 578", "Date: 03.05.2026"],
+    customerDetails: ["Invoice #: 580", "Date: 03.05.2026"],
     ecoworksAdd: ["Ecoworks","Gandhinagar"],
-    custname: "Rajesh & Pratik",
+    custname: "Mr. Vinay Arora",
     items
     // total
    };
