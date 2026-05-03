@@ -21,19 +21,19 @@ let items = [
       return item;
     });
 const data = {
-    invoiceNumber: "Mr. Vinay Arora",
-    companyDetails: ["UNIVEST STOCK BROKING PRIVATE LIMITED"],
+    invoiceNumber: "RPTECH GLOBAL SERVICES LLP",
+    companyDetails: ["RPTECH GLOBAL SERVICES LLP"],
     thanks:["Thank you for having business with us!"],
-    customerDetails: ["Invoice #: 512", "Date: 03.01.2026"],
+    customerDetails: ["Invoice #: 578", "Date: 03.05.2026"],
     ecoworksAdd: ["Ecoworks","Gandhinagar"],
-    custname: "Mr. Vinay Arora",
+    custname: "Rajesh & Pratik",
     items
     // total
    };
 const app = express()
 const port = 3000
 var name =  Date.now().toString();
-name = "Ecoworks_" + data.custname + "_03_Jan_26";
+name = "Ecoworks_" + data.custname + "_03_May_26";
 
 //const html = fs.readFileSync(path.resolve(__dirname, "./template.html"), 'utf8')
 
