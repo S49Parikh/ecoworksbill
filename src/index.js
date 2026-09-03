@@ -24,7 +24,7 @@ const data = {
     invoiceNumber: "Mr. Vinay Arora",
     companyDetails: ["UNIVEST STOCK BROKING PRIVATE LIMITED"],
     thanks:["Thank you for having business with us!"],
-    customerDetails: ["Invoice #: 583", "Date: 06.05.2026"],
+    customerDetails: ["Invoice #: 598", "Date: 03.09.2026"],
     ecoworksAdd: ["Ecoworks","Gandhinagar"],
     custname: "Mr. Vinay Arora",
     items
@@ -33,7 +33,7 @@ const data = {
 const app = express()
 const port = 3000
 var name =  Date.now().toString();
-name = "Ecoworks_" + data.custname + "_06_June_26";
+name = "Ecoworks_" + data.custname + "_03_September_26";
 
 //const html = fs.readFileSync(path.resolve(__dirname, "./template.html"), 'utf8')
 
